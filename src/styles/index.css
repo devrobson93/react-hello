@@ -1,12 +1,45 @@
+.semaforo{
+    background-color: black;
+    padding: 5px;
+    display: inline-block;
+    border-radius: 5px;
+    margin-left: 620px;
+        
+}
 
-/* 
-
-    You can write your own styles here...
+.light{
+    border-radius: 50%;
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
     
     
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+}
 
-*/
+.red{
+    background-color: red;
+    margin: 10px;
+}
+.yellow{
+    background-color: yellow;
+    margin: 10px;
+}
+
+.green{
+    background-color: green;
+    margin: 10px;
+}
+
+.glow{
+    box-shadow: 0 0 50px #f8f9fa;
+}
+
+.palito{
+    width: 25px;
+    height: 100px;
+    background-color: black;
+    margin-left: 671px;
+}

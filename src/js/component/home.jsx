@@ -1,13 +1,30 @@
-import React from "react";
-import Counter from "./counter.jsx"
+import React, { useState } from "react";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
-
-//create your first component
-const Home = (props) => {
+const Home = () => {
+	const [selectedColor, setSelectedColor] = useState(""); // Corregir: la función useState debe devolver una matriz con dos elementos
+	
 	return (
-		<Counter numberOne={props.numberOne} numberTwo={props.numberTwo} numberThree={props.numberThree} numberFour={props.numberFour} numberFive={props.numberFive} numberSix={props.numberSix} />
+		<>
+			<div className="palito"></div>
+			<div className="semaforo">
+				<div
+				onClick={()=>setSelectedColor("red")} // Corregir: cambiar "setSelectecColor" a "setSelectedColor"
+				className={"light red" + ((selectedColor === "red") ? " glow": "")}>
+
+				</div>
+				<div
+				onClick={()=>setSelectedColor("yellow")} 
+				className={"light yellow" + ((selectedColor === "yellow") ? " glow": "")}>
+
+				</div>
+				<div
+				onClick={()=>setSelectedColor("green")} 
+				className={"light green" + ((selectedColor === "green") ? " glow": "")}>
+
+				</div>
+
+			</div>
+		</>	
 	);
 };
 
